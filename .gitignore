@@ -1,0 +1,11 @@
+# Large raw directories & temporary files
+extracted_original/
+extracted_korean/node_modules/
+*.asar
+*.asar.patch
+*.asar.korean
+*.asar.original
+*.exe
+*.zip
+.tmp*
+tmp*
