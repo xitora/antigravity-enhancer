@@ -73,8 +73,8 @@ $I18N = @{
         InstallSuccess  = "성공! Antigravity 다국어 & 상단 사용량 패치가 완료되었습니다."
         FeatureHeader   = "주요 기능 안내"
         Feature1        = "앱 내 9개 언어 전환: 설정 > 일반 > Language 드롭다운 지원"
-        Feature2        = "빠른 언어 전환: Alt + Shift + L 단축키 또는 상단 🌐 버튼"
-        Feature3        = "상단 사용량 표시: 우측 상단 캡슐 위젯 및 모델별 상세 팝오버"
+        Feature2        = "빠른 언어 전환: Alt + Shift + L 단축키 또는 상단 🌐 드롭다운"
+        Feature3        = "상단 사용량 표시: 5h/주간 실시간 사용량 및 네이티브 테마 상세 팝오버"
         RollbackTitle   = "원본 영문 상태 복구 (app.asar.original -> app.asar)"
         RollbackNoBak   = "백업된 원본 파일(app.asar.original)을 찾을 수 없습니다."
         RollbackSuccess = "성공! Antigravity가 원본 영문 상태로 깨끗하게 복원되었습니다."
@@ -104,8 +104,8 @@ $I18N = @{
         InstallSuccess  = "Success! Antigravity Multi-Language & Quota Patch has been installed."
         FeatureHeader   = "Key Features"
         Feature1        = "In-App 9-Language Switch: Settings > General > Language dropdown"
-        Feature2        = "Quick Language Toggle: Press Alt + Shift + L or click top-bar 🌐 button"
-        Feature3        = "Top-Bar Real-Time Quota Display: Sleek capsule & model breakdown popover"
+        Feature2        = "Quick Language Toggle: Press Alt + Shift + L or click top-bar 🌐 dropdown"
+        Feature3        = "Top-Bar Real-Time Quota Display: 5h/Weekly usage & native-themed popover"
         RollbackTitle   = "Restoring Clean Original (app.asar.original -> app.asar)"
         RollbackNoBak   = "Backup file (app.asar.original) was not found."
         RollbackSuccess = "Success! Antigravity has been restored to its clean original state."
@@ -135,8 +135,8 @@ $I18N = @{
         InstallSuccess  = "成功！Antigravity 多言語＆上部使用量パッチの適用が完了しました。"
         FeatureHeader   = "主な機能のご案内"
         Feature1        = "アプリ内9言語切替: 設定 > 一般 > Language ドロップダウン"
-        Feature2        = "クイック言語切替: Alt + Shift + L ショートカットまたは上部の🌐ボタン"
-        Feature3        = "上部使用量表示: 右上のカプセルウィジェット＆モデル別詳細ポップオーバー"
+        Feature2        = "クイック言語切替: Alt + Shift + L ショートカットまたは上部の🌐ドロップダウン"
+        Feature3        = "上部使用量表示: 5時間/週間リアルタイム使用量＆ネイティブテーマ詳細ポップオーバー"
         RollbackTitle   = "オリジナル状態の復元 (app.asar.original -> app.asar)"
         RollbackNoBak   = "バックアップファイル (app.asar.original) が見つかりません。"
         RollbackSuccess = "成功！Antigravity がオリジナルのクリーンな状態に復元されました。"
@@ -166,8 +166,8 @@ $I18N = @{
         InstallSuccess  = "成功！Antigravity 多语言与顶部配额补丁已安装完成。"
         FeatureHeader   = "主要功能说明"
         Feature1        = "应用内 9 语言切换：设置 > 常规 > Language 下拉菜单"
-        Feature2        = "快速语言切换：按 Alt + Shift + L 快捷键或点击顶部 🌐 按钮"
-        Feature3        = "顶部实时配额显示：右上角磨砂胶囊小组件与模型详情弹窗"
+        Feature2        = "快速语言切换：按 Alt + Shift + L 快捷键或点击顶部 🌐 下拉菜单"
+        Feature3        = "顶部实时配额显示：5h/每周配额实时展示与原生主题详情弹窗"
         RollbackTitle   = "正在恢复原始状态 (app.asar.original -> app.asar)"
         RollbackNoBak   = "未找到备份文件 (app.asar.original)。"
         RollbackSuccess = "成功！Antigravity 已恢复为原始纯净状态。"
@@ -197,8 +197,8 @@ $I18N = @{
         InstallSuccess  = "成功！Antigravity 多語言與頂部配額修補程式已安裝完成。"
         FeatureHeader   = "主要功能說明"
         Feature1        = "應用程式內 9 語言切換：設定 > 一般 > Language 下拉選單"
-        Feature2        = "快速語言切換：按 Alt + Shift + L 快捷鍵或點擊頂部 🌐 按鈕"
-        Feature3        = "頂部即時配額顯示：右上角霧面膠囊小工具與模型詳情彈出視窗"
+        Feature2        = "快速語言切換：按 Alt + Shift + L 快捷鍵或點擊頂部 🌐 下拉選單"
+        Feature3        = "頂部即時配額顯示：5h/每週配額即時顯示與原生主題詳情彈出視窗"
         RollbackTitle   = "正在還原原始狀態 (app.asar.original -> app.asar)"
         RollbackNoBak   = "找不到備份檔案 (app.asar.original)。"
         RollbackSuccess = "成功！Antigravity 已還原為原始乾淨狀態。"
@@ -228,8 +228,8 @@ $I18N = @{
         InstallSuccess  = "¡Éxito! El parche multilingüe y de cuota de Antigravity se ha instalado."
         FeatureHeader   = "Características Principales"
         Feature1        = "Cambio entre 9 idiomas: Ajustes > General > menú Language"
-        Feature2        = "Cambio rápido: Atajo Alt + Shift + L o botón superior 🌐"
-        Feature3        = "Cuota en la barra superior: Cápsula en tiempo real y desglose por modelo"
+        Feature2        = "Cambio rápido: Atajo Alt + Shift + L o menú desplegable 🌐"
+        Feature3        = "Cuota en la barra superior: Uso 5h/semanal en tiempo real y desglose por modelo"
         RollbackTitle   = "Restaurando archivo original limpio (app.asar.original -> app.asar)"
         RollbackNoBak   = "No se encontró el archivo de respaldo (app.asar.original)."
         RollbackSuccess = "¡Éxito! Antigravity ha sido restaurado a su estado original."
@@ -259,8 +259,8 @@ $I18N = @{
         InstallSuccess  = "Succès ! Le patch multilingue et quota d'Antigravity est installé."
         FeatureHeader   = "Fonctionnalités Clés"
         Feature1        = "9 langues intégrées : Paramètres > Général > menu Language"
-        Feature2        = "Changement rapide : Raccourci Alt + Shift + L ou bouton 🌐 en haut"
-        Feature3        = "Affichage du quota en haut : Capsule temps réel et détails par modèle"
+        Feature2        = "Changement rapide : Raccourci Alt + Shift + L ou menu 🌐 en haut"
+        Feature3        = "Affichage du quota en haut : Usage 5h/hebdo en temps réel et détails par modèle"
         RollbackTitle   = "Restauration de l'état d'origine (app.asar.original -> app.asar)"
         RollbackNoBak   = "Fichier de sauvegarde (app.asar.original) introuvable."
         RollbackSuccess = "Succès ! Antigravity a été restauré à son état d'origine."
@@ -290,8 +290,8 @@ $I18N = @{
         InstallSuccess  = "Erfolg! Der Antigravity Mehrsprachen- & Kontingent-Patch wurde installiert."
         FeatureHeader   = "Hauptfunktionen"
         Feature1        = "9 Sprachen in der App: Einstellungen > Allgemein > Language-Menü"
-        Feature2        = "Schneller Sprachwechsel: Alt + Shift + L oder 🌐-Schaltfläche oben"
-        Feature3        = "Kontingentanzeige oben: Echtzeit-Kapsel & Modell-Aufschlüsselung"
+        Feature2        = "Schneller Sprachwechsel: Alt + Shift + L oder 🌐-Dropdown oben"
+        Feature3        = "Kontingentanzeige oben: 5h-/Wochen-Nutzung & Modell-Aufschlüsselung"
         RollbackTitle   = "Stelle Originalzustand wieder her (app.asar.original -> app.asar)"
         RollbackNoBak   = "Sicherungsdatei (app.asar.original) wurde nicht gefunden."
         RollbackSuccess = "Erfolg! Antigravity wurde in den sauberen Originalzustand zurückversetzt."
@@ -321,8 +321,8 @@ $I18N = @{
         InstallSuccess  = "Успешно! Мультиязычный патч и виджет квот Antigravity установлены."
         FeatureHeader   = "Основные возможности"
         Feature1        = "9 языков в приложении: Настройки > Общие > меню Language"
-        Feature2        = "Быстрое переключение: Alt + Shift + L или кнопка 🌐 в верхней панели"
-        Feature3        = "Отображение квот сверху: капсула в реальном времени и детали по моделям"
+        Feature2        = "Быстрое переключение: Alt + Shift + L или меню 🌐 в верхней панели"
+        Feature3        = "Отображение квот сверху: лимиты 5ч/неделя в реальном времени и детали по моделям"
         RollbackTitle   = "Восстановление исходного состояния (app.asar.original -> app.asar)"
         RollbackNoBak   = "Резервный файл (app.asar.original) не найден."
         RollbackSuccess = "Успешно! Antigravity восстановлен до чистого исходного состояния."
@@ -380,6 +380,48 @@ function Write-Err {
     Write-Host ("  [ERROR] {0}" -f $Message) -ForegroundColor Red
 }
 
+function Stop-AntigravityProcesses {
+    $procNames = @("Antigravity", "language_server", "language_server_windows_x64")
+    for ($attempt = 1; $attempt -le 10; $attempt++) {
+        $running = @()
+        foreach ($name in $procNames) {
+            $found = Get-Process -Name $name -ErrorAction SilentlyContinue
+            if ($found) { $running += $found }
+        }
+        if ($running.Count -eq 0) {
+            break
+        }
+        foreach ($p in $running) {
+            try { Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue } catch {}
+        }
+        Start-Sleep -Milliseconds 600
+    }
+    Start-Sleep -Milliseconds 500
+}
+
+function Copy-AsarWithRetry {
+    param([string]$backupFile, [string]$targetFile)
+    $srcHash = (Get-FileHash -Path $backupFile -Algorithm SHA256).Hash
+    $lastErr = $null
+    for ($i = 1; $i -le 6; $i++) {
+        try {
+            Copy-Item $backupFile $targetFile -Force -ErrorAction Stop
+            $dstHash = (Get-FileHash -Path $targetFile -Algorithm SHA256).Hash
+            if ($srcHash -eq $dstHash) {
+                return
+            }
+            $lastErr = "SHA256 mismatch after copy ($dstHash != $srcHash)"
+        } catch {
+            $lastErr = $_.Exception.Message
+        }
+        if (-not $NoKill -and -not $DryRun) {
+            Stop-AntigravityProcesses
+        }
+        Start-Sleep -Seconds 1
+    }
+    throw "Failed to update $targetFile after multiple retries: $lastErr"
+}
+
 function Resolve-TargetPaths {
     $targetDir = "$env:LOCALAPPDATA\Programs\Antigravity\resources"
     if (-not (Test-Path $targetDir)) {
@@ -404,9 +446,11 @@ function Resolve-TargetPaths {
             "$env:APPDATA\Antigravity\Code Cache",
             "$env:APPDATA\Antigravity\Cache",
             "$env:APPDATA\Antigravity\GPUCache",
+            "$env:APPDATA\Antigravity\DawnCache",
             "$env:APPDATA\antigravity\Code Cache",
             "$env:APPDATA\antigravity\Cache",
-            "$env:APPDATA\antigravity\GPUCache"
+            "$env:APPDATA\antigravity\GPUCache",
+            "$env:APPDATA\antigravity\DawnCache"
         )
     }
 }
@@ -430,8 +474,7 @@ function Invoke-PatchInstall {
 
     Write-Step "2/5" $L.Step2Title
     if (-not $NoKill -and -not $DryRun) {
-        Get-Process -Name "Antigravity", "language_server" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-        Start-Sleep -Seconds 2
+        Stop-AntigravityProcesses
         Write-Ok $L.Step2Ok
     } else {
         Write-Info $L.Step2Skip
@@ -451,7 +494,7 @@ function Invoke-PatchInstall {
 
     Write-Step "4/5" $L.Step4Title
     if (-not $DryRun) {
-        Copy-Item -Path $paths.PatchFile -Destination $targetFile -Force
+        Copy-AsarWithRetry -backupFile $paths.PatchFile -targetFile $targetFile
     }
     Write-Ok $L.Step4Ok
 
@@ -485,8 +528,7 @@ function Invoke-PatchRollback {
 
     Write-Step "1/3" $L.Step2Title
     if (-not $NoKill -and -not $DryRun) {
-        Get-Process -Name "Antigravity", "language_server" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-        Start-Sleep -Seconds 2
+        Stop-AntigravityProcesses
         Write-Ok $L.Step2Ok
     } else {
         Write-Info $L.Step2Skip
@@ -504,7 +546,7 @@ function Invoke-PatchRollback {
         }
     } else {
         if (-not $DryRun) {
-            Copy-Item $backupFile $targetFile -Force
+            Copy-AsarWithRetry -backupFile $backupFile -targetFile $targetFile
         }
         Write-Ok $L.RollbackSuccess
     }

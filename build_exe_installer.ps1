@@ -47,6 +47,7 @@ using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 
 [assembly: AssemblyTitle("Antigravity Enhancer Setup")]
@@ -60,6 +61,12 @@ namespace AntigravityEnhancer
 {
     internal static class Program
     {
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern bool SetConsoleOutputCP(uint wCodePageID);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern bool SetConsoleCP(uint wCodePageID);
+
         private static void ExtractResource(string resourceName, string outputPath)
         {
             using (Stream resStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
@@ -81,6 +88,8 @@ namespace AntigravityEnhancer
         {
             try
             {
+                SetConsoleOutputCP(65001);
+                SetConsoleCP(65001);
                 Console.OutputEncoding = Encoding.UTF8;
             }
             catch { }
@@ -123,9 +132,16 @@ namespace AntigravityEnhancer
                     }
                 }
 
+                string sysRoot = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                string psExe = Path.Combine(sysRoot, @"System32\WindowsPowerShell\v1.0\powershell.exe");
+                if (!File.Exists(psExe))
+                {
+                    psExe = "powershell.exe";
+                }
+
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
-                    FileName = "powershell.exe",
+                    FileName = psExe,
                     Arguments = argBuilder.ToString(),
                     WorkingDirectory = tempDir,
                     UseShellExecute = false
@@ -134,9 +150,15 @@ namespace AntigravityEnhancer
                 using (Process p = Process.Start(psi))
                 {
                     p.WaitForExit();
-                    if (!hasActionArg && p.ExitCode == 0)
+                    if (!hasActionArg)
                     {
                         Console.WriteLine();
+                        if (p.ExitCode != 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("   [!] Setup exited with code " + p.ExitCode + ".");
+                            Console.ResetColor();
+                        }
                         Console.Write("   Press Enter to close...");
                         try { Console.ReadLine(); } catch { }
                     }
@@ -148,6 +170,8 @@ namespace AntigravityEnhancer
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Error.WriteLine("[ERROR] Installer failed: " + ex.Message);
                 Console.ResetColor();
+                Console.Write("   Press Enter to close...");
+                try { Console.ReadLine(); } catch { }
                 return 1;
             }
             finally
@@ -198,7 +222,7 @@ try {
         "/nologo",
         "/target:exe",
         "/optimize+",
-        "/platform:anycpu",
+        "/platform:x64",
         "/out:$OutputExe",
         "/resource:$ps1Gz,apply_patch.ps1.gz",
         "/resource:$asarGz,app.asar.patch.gz"
